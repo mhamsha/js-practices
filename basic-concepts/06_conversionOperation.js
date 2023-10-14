@@ -1,3 +1,4 @@
+// conversions
 // let scoreString = "5";
 // console.log(typeof(scoreString));
 // console.log(scoreString);
@@ -48,3 +49,9 @@ console.log(scoreNumber + 10);
 
 // // we can also make number into string so we cannot use arithmetic operations on them;
 
+//==-------------------------Operations-------------------------------------==//
+
+let value = 10;
+let negValue = -value
+console.log(value);
+console.log(negValue);
