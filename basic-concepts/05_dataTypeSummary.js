@@ -25,3 +25,26 @@ const func1 = function add(){
  }
 func1()
 console.log(typeof func1, typeof(objext), typeof(list)) 
+
+// ________________________Stack OR Heap memory____________________________
+
+// stack(Primittive) heap(Reference/non-primitive)
+
+let yourName = 'hamza'
+let hisName = yourName
+hisName = 'haris'
+
+console.log(yourName);
+console.log(hisName);
+// so in this primitive data type we get copy of the Copy of that thing not reference
+
+let userOne = {
+    name: 'hamza',
+    age: 18
+}
+let userTwo = userOne
+
+userTwo.name= 'shahzad'
+console.log(userOne.name);
+console.log(userTwo.name);
+// so in this non- primitive data type we get reference of orignal memory not  the Copy of that memory means if we change the copy means the other we change the orignal memory not his copy like in primitive data types memory stack
