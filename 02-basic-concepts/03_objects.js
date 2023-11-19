@@ -31,7 +31,7 @@ hobbies : ["coding", "reading", "playing", "eating"],
 const myNewSymbol3 = Symbol("optionKey3")
 userInformation[myNewSymbol3] = "key3"
 // userInformation[Symbol("exitkey")] = "key1"
-console.log(userInformation)
+// console.log(userInformation)
 // console.log(userInformation[myNewSymbol1]) // ^ we can access this property with bracket notation
 // console.log(userInformation[myNewSymbol3]) // ^ we can access this property with bracket notation
 // console.log(userInformation.optionKey1) // ^ we can't access this property with bracket notation
@@ -39,7 +39,15 @@ console.log(userInformation)
 // console.log(userInformation.myNewSymbol1)// ^ it won't work 
 
 // * freeze object
-Object.freeze(userInformation) // ^ it will freeze object and we can't update object properties
-userInformation.name = "haris Shahzad"
-console.log(userInformation)
+// Object.freeze(userInformation) // ^ it will freeze object and we can't update object properties
+// userInformation.name = "haris Shahzad"
+// console.log(userInformation)
 
+// * add function in object
+const greeting = function(){
+    console.log(`Hello, welcome to out Crew: ${this.name}`); // ^ "this" keyword refers to object of which function is a property
+}
+// userInformation.name = "haris Shahzad" 
+userInformation.greetingJS = greeting
+console.log(userInformation)
+userInformation.greetingJS()
