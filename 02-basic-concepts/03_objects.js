@@ -1,6 +1,7 @@
 // ? objects
 // * Two ways to create objects in JS
-// * 1. Object constructor we'll learn later
+// * 1. Object constructor we'll learn later singleton 
+// object.create
 // * 2. Object literal
 const myNewSymbol1 = Symbol("optionKey1")
 const userInformation = {
