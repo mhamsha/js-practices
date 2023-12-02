@@ -9,22 +9,22 @@
 //     console.log("You are not elligible to buy courses.");
     
 // }
-const number = 12;
-switch (number) {
-    case 12:
-        console.log("hello");
+// const number = 12;
+// switch (number) {
+//     case 12:
+//         console.log("hello");
         
-    case 12:
-        console.log("hello2");
+//     case 12:
+//         console.log("hello2");
         
 
-    default:
-        console.log("hello3");
+//     default:
+//         console.log("hello3");
         
-}
-// if
-const isUserloggedIn = true
-const temperature = 41
+// }
+
+// const isUserloggedIn = true
+// const temperature = 41
 
 // if ( temperature === 40 ){
 //     console.log("less than 50");
@@ -62,15 +62,15 @@ const temperature = 41
 
 // }
 
-const userLoggedIn = true
-const debitCard = true
-const loggedInFromGoogle = false
-const loggedInFromEmail = true
+// const userLoggedIn = true
+// const debitCard = true
+// const loggedInFromGoogle = false
+// const loggedInFromEmail = true
 
-if (userLoggedIn && debitCard && 2==3) {
-    console.log("Allow to buy course");
-}
+// if (userLoggedIn && debitCard && 2==3) {
+//     console.log("Allow to buy course");
+// }
 
-if (loggedInFromGoogle || loggedInFromEmail) {
-    console.log("User logged in");
-}
+// if (loggedInFromGoogle || loggedInFromEmail) {
+//     console.log("User logged in");
+// }
