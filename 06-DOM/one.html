@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <style>
+        .bg-color{
+            background-color: rgb(49, 44, 44);
+            color: rgb(255, 255, 255);
+        }
+        .mainHeading{
+            text-align: center;
+        }
+        .list{
+            list-style: none;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-color">
+        <h1 id="topHeading1" class="mainHeading">Welcome to my world</h1>
+        <h1 id="topHeading2" class="mainHeading">Welcome to my world</h1>
+        <h1 id="topHeading3" class="mainHeading">Welcome to my world</h1>
+        <p>I've done some practice in the browser and made some changes in the text of web pages by using JavaScript</p>    
+        <p>I've done some practice in the browser and made some changes in the text of web pages by using JavaScript</p>
+        <ul class="parent">
+            <li class="child">one</li>
+            <li class="child">two</li>
+            <!-- <div><li class="child " style="display: none;">three</li></div> -->
+            <div><li class="child ">three</li></div>
+            <li class="child">four</li>
+        </ul>
+    </div>
+    <script>
+        const parent = document.querySelector('.parent')
+        // console.log(parent)
+        // console.log(parent.children)
+        // console.log(parent.children[0].innerText= "hello")
+        // console.log(parent.children[0].innerHTML= "hello1")
+        // console.log(parent.children[0].textContent= "hello2")
+    
+        // console.log(parent.children)
+        // console.log(parent.children[0])
+        // console.log(parent.children[1])
+        // console.log(parent.children[2].innerHTML) // ^ It support html tag as well
+        // console.log(parent.children[2].innerText) // ^ It does not display none text as well
+        // console.log(parent.children[2].textContent) // ^ It displays display none text as well
+
+
+        // for (let i = 0; i < parent.children.length; i++) {
+        //     console.log(parent.children[i].innerHTML);
+            
+        // }
+
+        parent.children[1].style.color="orange"
+        // console.log(parent.firstElementChild.)
+        // console.log(parent.lastElementChild)  // ^ need to search for 2nd and 3rd child
+
+        console.log(parent.childNodes)
+        const childOne = document.querySelector('.child')
+        const childTwo = document.querySelector('li:nth-child(2)')
+        // console.log(childOne)
+        // console.log(childOne.parentElement) 
+        // console.log(childOne.nextElementSibling.nextElementSibling.nextElementSibling )
+        // console.log(childTwo);
+        // console.log(childTwo.parentElement) 
+        // console.log(childTwo.previousElementSibling )
+        // console.log(childTwo.nextElementSibling )
+
+        // console.log(childTwo.nextSibling.nextElementSibling.innerText); // just doing practice and find this
+    </script>
+</body>
+</html>

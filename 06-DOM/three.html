@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <ul>
+      <li>JavaScript</li>
+    </ul>
+  </body>
+  <script>
+    // To add Element 
+    function addLang(langName) {
+      // This is not a good approch because it .innerHTML transverse the whole tree
+      const addTag = document.createElement("li");
+      addTag.innerHTML = `${langName} `;
+      //   const addLang = document.querySelector("ul");
+      //   addLang.appendChild(addTag);
+      document.querySelector("ul").appendChild(addTag);
+    }
+
+    // addLang("python");
+    // addLang("python");
+    // addLang("Ruby");
+
+    function addOptiLang(langName){
+        const addTag = document.createElement("li");
+        addTag.appendChild(document.createTextNode(langName))
+        document.querySelector('ul').appendChild(addTag)
+    }
+    addOptiLang('cpp')
+    addOptiLang('c')
+    addOptiLang('ruby')
+    addOptiLang('python')
+    addOptiLang('R')
+    addOptiLang('Cobol')
+    addOptiLang('Java')
+  </script>
+</html>

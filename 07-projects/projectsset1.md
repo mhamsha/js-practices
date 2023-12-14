@@ -1,6 +1,7 @@
 # Projects related to DOM
 
 ## project link
+
 [Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 
 # Solution code
@@ -29,7 +30,7 @@ buttons.forEach(function (button) {
     if (e.target.id === 'yellow') {
       body.style.backgroundColor = e.target.id;
     }
-    
+  
   });
 });
 
@@ -80,7 +81,6 @@ setInterval(function () {
 ```
 
 ## project 4 solution
-
 
 ```javascript
 
@@ -179,7 +179,6 @@ function newGame() {
 
 ```
 
-
 # Project 5 solution
 
 ```javascript
@@ -199,7 +198,7 @@ window.addEventListener('keydown', (e) => {
       <td>${e.keyCode}</td> 
       <td>${e.code}</td>
     </tr>
-    
+  
   </table>
     </div>
   `;
