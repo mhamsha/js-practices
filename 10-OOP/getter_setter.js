@@ -9,7 +9,7 @@ class user {
   set email(value) {
     this._email = value;
   }
-  get password() {
+  get password() { 
     return this._password.toUpperCase();
   }
 
