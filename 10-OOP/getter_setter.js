@@ -1,23 +1,42 @@
-class user {
-  constructor(email, password) {
-    this.email = email;
-    this.password = password;
-  }
-  get email() {
-    return this._email.toUpperCase() + " is my email";
-  }
-  set email(value) {
-    this._email = value;
-  }
-  get password() { 
-    return this._password.toUpperCase();
+class User {
+  #email;
+  // #password; 
+
+  constructor() {
+    this.#email = "@undefined";
+    // this.#password ="undefined";
   }
 
-  set password(value) {
-    this._password = value.toUpperCase();
+  // set password(value) { 
+  //   this.#password = value;
+  // }
+  // get password() {
+  //   return this.#password;
+  // }
+
+  set email(value){
+    
+      this.#email = value;
+    
+    
+  }
+  get email(){
+    if(this.#email.includes("@") && this.#email.includes(".") && this.#email.length > 5 ){
+
+      return this.#email;
+    }
+    else{
+      return "Invalid email";
+    }
   }
 }
 
-const hamza = new user("hamza@gmail.com", "abc");
-console.log(hamza.password);
-console.log(hamza.email);
+const userOne = new User()
+
+// console.log(userOne.password);
+// userOne.password= "newPasswordnew"; // ^ to update password in one way by dot notation
+// userOne['password'] = "newPassword"; // ^ to update password in another way by bracket notation
+// console.log(userOne.password);
+userOne.email = "hamza@@!@@mail.com";
+
+console.log(userOne.email)

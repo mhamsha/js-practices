@@ -2,7 +2,7 @@
 
 const arr = ['hamza', "hannan", "haris", 'huzaifa', 'hanzla', 'hadi', 'huzaifa']
 arr.forEach((element) => {
-    // console.log(element);
+    console.log(element);
 });
 
 arr.forEach( function(item){
@@ -35,8 +35,8 @@ const coding = [
 ]
 // * this is common practice we used in project 
 coding.forEach(element => {
-    console.log(element.lang);
-    console.log(element.dev);
+    // console.log(element.lang);
+    // console.log(element.dev);
 });
 
 
